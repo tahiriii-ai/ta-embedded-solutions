@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Level Indicator PCB — Tahir Ali</title>
+<meta name="description" content="2-layer water level indicator PCB using BC547 transistors, LEDs, and a buzzer, resolved across both KiCad and Altium Designer workflows.">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand"><span class="chip">TA</span>Tahir Ali</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../Tahir_Ali_Resume.pdf" class="nav-cta" download>Download Résumé</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="proj-hero">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> <span>/</span> <a href="../index.html#projects">Projects</a> <span>/</span> <span>U6</span>
+      </div>
+      <div class="proj-hero-top">
+        <div>
+          <span class="tag">U6 — Sensor &amp; Alert Board</span>
+          <h1>Water Level Indicator PCB</h1>
+          <p class="sub">KiCad &amp; Altium · 2-Layer PCB · Mar 2026</p>
+        </div>
+      </div>
+      <div class="chips-row">
+        <span>KiCad</span><span>Altium Designer</span><span>2-Layer</span><span>BC547</span><span>DRC/ERC Verified</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <div class="gallery">
+      <figure>
+        <img src="../images/wli-3d.jpg" alt="Water level indicator PCB, 3D render, showing LEDs, buzzer, and transistor stages">
+        <figcaption>3D View</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/wli-routing.jpg" alt="Water level indicator PCB copper routing and layout">
+        <figcaption>PCB Layout — Routing</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/wli-schematic.jpg" alt="Water level indicator schematic diagram with BC547 transistor stages and buzzer">
+        <figcaption>Schematic Capture</figcaption>
+      </figure>
+    </div>
+
+    <div class="proj-body-grid">
+      <div>
+        <h2>Overview</h2>
+        <p>
+          A 2-layer sensor and alert board built around four BC547 transistor stages, each one
+          driven by a probe input on a 4-pin screw terminal. As water reaches each probe, its
+          transistor stage switches on — lighting a corresponding level LED, and triggering an
+          onboard buzzer on the topmost stage for an audible full-tank alert on a 10V supply rail.
+        </p>
+        <p>
+          The design was carried through both KiCad and Altium Designer, which meant reconciling
+          two different footprint libraries and routing engines on the same schematic — resolving
+          routing conflicts and footprint mismatches along the way, and clearing DRC on both
+          toolchains before calling it done.
+        </p>
+        <h2 style="margin-top:32px;">Key Features</h2>
+        <ul class="feature-list">
+          <li>Four BC547 transistor-driven level detection stages</li>
+          <li>4-pin screw terminal for direct probe wiring</li>
+          <li>Three LED level indicators plus a buzzer for audible alerts</li>
+          <li>Full schematic through footprint assignment and layout</li>
+          <li>3D visualization for design review</li>
+          <li>Routing conflicts and footprint mismatches resolved</li>
+          <li>Verified across both KiCad and Altium Designer workflows</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <h3>Build Spec</h3>
+        <div class="spec-row"><span>Tools</span><span>KiCad &amp; Altium Designer</span></div>
+        <div class="spec-row"><span>Layers</span><span>2-Layer PCB</span></div>
+        <div class="spec-row"><span>Sensing</span><span>4× BC547 transistor stages</span></div>
+        <div class="spec-row"><span>Input</span><span>4-pin screw terminal (probes)</span></div>
+        <div class="spec-row"><span>Indicators</span><span>3× LEDs + buzzer</span></div>
+        <div class="spec-row"><span>Supply</span><span>10V rail</span></div>
+        <div class="spec-row"><span>Date</span><span>March 2026</span></div>
+        <div class="spec-row"><span>Verification</span><span>DRC clean on both tools</span></div>
+      </div>
+    </div>
+
+    <div class="proj-nav">
+      <a href="dc-dc-buck-converter.html">← Previous: DC-DC Buck Converter</a>
+      <a href="../index.html#projects">Back to all projects →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Tahir Ali. Built board-by-board.</span>
+    <span class="footer-social">
+      <a href="https://www.fiverr.com/sellers/tahircircuit" target="_blank" rel="noopener">Fiverr</a> ·
+      <a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a> ·
+      <a href="https://www.freelancer.com/u/ElectricTech1" target="_blank" rel="noopener">Freelancer</a> ·
+      <a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+    <span><a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="tel:03049037412">0304-9037412</a> · Pakistan · Available Worldwide</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

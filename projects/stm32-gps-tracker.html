@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STM32 GPS Tracker Board — Tahir Ali</title>
+<meta name="description" content="Multi-layer STM32 GPS tracker board with antenna keep-out and SD card data logging. Designed in KiCad by Tahir Ali.">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand"><span class="chip">TA</span>Tahir Ali</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../Tahir_Ali_Resume.pdf" class="nav-cta" download>Download Résumé</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="proj-hero">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> <span>/</span> <a href="../index.html#projects">Projects</a> <span>/</span> <span>U4</span>
+      </div>
+      <div class="proj-hero-top">
+        <div>
+          <span class="tag">U4 — Tracking &amp; Logging Board</span>
+          <h1>STM32 GPS Tracker Board</h1>
+          <p class="sub">KiCad · STM32 · GPS Module</p>
+        </div>
+      </div>
+      <div class="chips-row">
+        <span>KiCad</span><span>STM32</span><span>GPS</span><span>SD Card Logging</span><span>DRC/ERC Verified</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <div class="gallery">
+      <figure>
+        <img src="../images/gps-front.png" alt="STM32 GPS tracker board 3D render, front view showing STM32 MCU and buttons">
+        <figcaption>3D Front View</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/gps-back.png" alt="STM32 GPS tracker board 3D render, back view showing GPS module and SD card slot">
+        <figcaption>3D Back View</figcaption>
+      </figure>
+    </div>
+
+    <div class="proj-body-grid">
+      <div>
+        <h2>Overview</h2>
+        <p>
+          A multi-layer tracking board that brings together an STM32 microcontroller, a GPS
+          module, and an SD card slot for onboard data logging. With three components that all
+          need clean signal integrity — the MCU's digital lines, the GPS module's RF front end,
+          and the SD card's data bus — the layout leans on a dedicated ground plane and careful
+          power management to keep each section quiet.
+        </p>
+        <p>
+          The GPS module sits inside its own antenna keep-out zone, kept clear of copper pour and
+          crossing traces so reception isn't compromised by the rest of the board.
+        </p>
+        <h2 style="margin-top:32px;">Key Features</h2>
+        <ul class="feature-list">
+          <li>STM32 microcontroller integration</li>
+          <li>GPS module with dedicated antenna keep-out zone</li>
+          <li>SD card slot for onboard data logging</li>
+          <li>UART communication interface</li>
+          <li>Dedicated power management circuitry</li>
+          <li>Multi-layer routing with a solid ground plane</li>
+          <li>Mounting holes for enclosure integration</li>
+          <li>DRC and ERC verified before fabrication</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <h3>Build Spec</h3>
+        <div class="spec-row"><span>Tool</span><span>KiCad</span></div>
+        <div class="spec-row"><span>MCU</span><span>STM32</span></div>
+        <div class="spec-row"><span>Positioning</span><span>GPS module</span></div>
+        <div class="spec-row"><span>Storage</span><span>microSD slot</span></div>
+        <div class="spec-row"><span>Comms</span><span>UART</span></div>
+        <div class="spec-row"><span>Layers</span><span>Multi-layer + ground plane</span></div>
+        <div class="spec-row"><span>Mechanical</span><span>Enclosure mounting holes</span></div>
+        <div class="spec-row"><span>Verification</span><span>DRC + ERC clean</span></div>
+      </div>
+    </div>
+
+    <div class="proj-nav">
+      <a href="usb-uart-converter.html">← Previous: USB to UART Converter</a>
+      <a href="dc-dc-buck-converter.html">Next project: DC-DC Buck Converter →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Tahir Ali. Built board-by-board.</span>
+    <span class="footer-social">
+      <a href="https://www.fiverr.com/sellers/tahircircuit" target="_blank" rel="noopener">Fiverr</a> ·
+      <a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a> ·
+      <a href="https://www.freelancer.com/u/ElectricTech1" target="_blank" rel="noopener">Freelancer</a> ·
+      <a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+    <span><a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="tel:03049037412">0304-9037412</a> · Pakistan · Available Worldwide</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

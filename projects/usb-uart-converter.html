@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USB to UART Converter Board — Tahir Ali</title>
+<meta name="description" content="Compact CP2102 USB-to-UART bridge board with USB Type-C, ESD-protected data lines, and TX/RX status LEDs. Designed in KiCad by Tahir Ali.">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand"><span class="chip">TA</span>Tahir Ali</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../Tahir_Ali_Resume.pdf" class="nav-cta" download>Download Résumé</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="proj-hero">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> <span>/</span> <a href="../index.html#projects">Projects</a> <span>/</span> <span>U3</span>
+      </div>
+      <div class="proj-hero-top">
+        <div>
+          <span class="tag">U3 — USB Interface Board</span>
+          <h1>USB to UART Converter Board</h1>
+          <p class="sub">KiCad · CP2102 · USB Type-C</p>
+        </div>
+      </div>
+      <div class="chips-row">
+        <span>KiCad</span><span>CP2102</span><span>USB-C</span><span>ESD Protected</span><span>DRC/ERC Verified</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <div class="gallery">
+      <figure>
+        <img src="../images/usbuart-3d.png" alt="USB to UART converter board 3D render showing USB-C connector and CP2102 chip">
+        <figcaption>3D View — USB to UART Converter</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/usbuart-schematic-combo.png" alt="USB to UART converter schematic and PCB layout side by side">
+        <figcaption>PCB Layout &amp; Schematic Diagram</figcaption>
+      </figure>
+    </div>
+
+    <div class="proj-body-grid">
+      <div>
+        <h2>Overview</h2>
+        <p>
+          A compact bridge board built around the CP2102 USB-to-UART chip, with a USB Type-C
+          receptacle on the input side and a clean 5-pin header on the output. The design keeps
+          the footprint small while still protecting the data lines and giving a visual read on
+          traffic through onboard TX/RX status LEDs.
+        </p>
+        <p>
+          A 100k/101k resistor divider network conditions the signal path, and the layout was
+          taken through a full DRC/ERC pass before Gerber export, so it drops straight into
+          fabrication without rework.
+        </p>
+        <h2 style="margin-top:32px;">Key Features</h2>
+        <ul class="feature-list">
+          <li>USB Type-C receptacle connector for the host side</li>
+          <li>CP2102 USB-to-UART bridge chip</li>
+          <li>ESD protection diodes on both data lines</li>
+          <li>TX / RX status LED indicators</li>
+          <li>5-pin output header: 3.3V / 5V / TX / RX / GND</li>
+          <li>100k / 101k resistor divider network</li>
+          <li>Compact, clean two-layer layout</li>
+          <li>DRC and ERC verified clean before fabrication</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <h3>Build Spec</h3>
+        <div class="spec-row"><span>Tool</span><span>KiCad</span></div>
+        <div class="spec-row"><span>Bridge IC</span><span>CP2102</span></div>
+        <div class="spec-row"><span>Connector</span><span>USB Type-C</span></div>
+        <div class="spec-row"><span>Output</span><span>5-Pin Header</span></div>
+        <div class="spec-row"><span>Protection</span><span>ESD diodes on D+/D-</span></div>
+        <div class="spec-row"><span>Indicators</span><span>TX / RX LEDs</span></div>
+        <div class="spec-row"><span>Verification</span><span>DRC + ERC clean</span></div>
+        <div class="spec-row"><span>Fab Ready</span><span>JLCPCB / PCBWay / OSHPark</span></div>
+      </div>
+    </div>
+
+    <div class="proj-nav">
+      <a href="esp32-dev-board.html">← Previous: Custom ESP32 Dev Board</a>
+      <a href="stm32-gps-tracker.html">Next project: STM32 GPS Tracker →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Tahir Ali. Built board-by-board.</span>
+    <span class="footer-social">
+      <a href="https://www.fiverr.com/sellers/tahircircuit" target="_blank" rel="noopener">Fiverr</a> ·
+      <a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a> ·
+      <a href="https://www.freelancer.com/u/ElectricTech1" target="_blank" rel="noopener">Freelancer</a> ·
+      <a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+    <span><a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="tel:03049037412">0304-9037412</a> · Pakistan · Available Worldwide</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

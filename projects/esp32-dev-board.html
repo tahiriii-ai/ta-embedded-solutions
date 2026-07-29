@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom ESP32 Development Board — Tahir Ali</title>
+<meta name="description" content="2-layer ESP32-WROOM-32 development board with USB-C, ESD protection, onboard 3.3V LDO, and full GPIO breakout. Designed in KiCad by Tahir Ali.">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand"><span class="chip">TA</span>Tahir Ali</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../Tahir_Ali_Resume.pdf" class="nav-cta" download>Download Résumé</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="proj-hero">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> <span>/</span> <a href="../index.html#projects">Projects</a> <span>/</span> <span>U2</span>
+      </div>
+      <div class="proj-hero-top">
+        <div>
+          <span class="tag">U2 — Microcontroller Dev Board</span>
+          <h1>Custom ESP32 Development Board</h1>
+          <p class="sub">2-Layer PCB · KiCad · ESP32-WROOM-32</p>
+        </div>
+      </div>
+      <div class="chips-row">
+        <span>KiCad</span><span>2-Layer PCB</span><span>ESP32-WROOM-32</span><span>USB-C</span><span>DRC/ERC Verified</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <div class="gallery">
+      <figure>
+        <img src="../images/esp32-front.png" alt="ESP32 development board 3D render, front view showing USB-C connector and antenna">
+        <figcaption>3D Front View</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/esp32-back.png" alt="ESP32 development board 3D render, back view showing Namal University silkscreen">
+        <figcaption>3D Back View</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/esp32-schematic-a.png" alt="ESP32 board schematic sheet with input power, LDO, ESP32, and pin header blocks">
+        <figcaption>PCB Layout</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/esp32-schematic-b.png" alt="ESP32 board copper routing with RF antenna keep-out zone">
+        <figcaption>Schematic Diagram</figcaption>
+      </figure>
+    </div>
+
+    <div class="proj-body-grid">
+      <div>
+        <h2>Overview</h2>
+        <p>
+          A complete 2-layer development board built around the ESP32-WROOM-32 module, designed
+          end-to-end in KiCad: schematic capture, footprint placement, routing, and a verified
+          manufacturing output. The board takes USB Type-C for power and data, regulates down to
+          3.3V on-board, and exposes the module's core interfaces through a full GPIO header —
+          built as a self-contained platform other firmware projects can be built on top of.
+        </p>
+        <p>
+          Boot and reset circuitry uses RC filtering to debounce the two push-buttons cleanly,
+          and the ground plane was poured solid under the RF section to keep EMI down around the
+          module's antenna.
+        </p>
+        <h2 style="margin-top:32px;">Key Features</h2>
+        <ul class="feature-list">
+          <li>USB Type-C input with ESD protection via USBLC6-2SC6</li>
+          <li>Onboard 3.3V LDO regulation (AP2112K-1.2)</li>
+          <li>Boot and reset push-buttons with RC-filtered debounce</li>
+          <li>Solid ground plane poured for EMI reduction</li>
+          <li>Dedicated RF antenna keep-out zone around the module</li>
+          <li>UART, SPI, and I2C broken out across full GPIO headers</li>
+          <li>Verified clean with DRC and ERC before fabrication</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <h3>Build Spec</h3>
+        <div class="spec-row"><span>Tool</span><span>KiCad</span></div>
+        <div class="spec-row"><span>Layers</span><span>2-Layer PCB</span></div>
+        <div class="spec-row"><span>MCU Module</span><span>ESP32-WROOM-32</span></div>
+        <div class="spec-row"><span>Power In</span><span>USB Type-C</span></div>
+        <div class="spec-row"><span>Regulator</span><span>AP2112K-1.2 (3.3V LDO)</span></div>
+        <div class="spec-row"><span>ESD Protection</span><span>USBLC6-2SC6</span></div>
+        <div class="spec-row"><span>Interfaces</span><span>UART / SPI / I2C</span></div>
+        <div class="spec-row"><span>Verification</span><span>DRC + ERC clean</span></div>
+        <div class="spec-row"><span>Fab Ready</span><span>JLCPCB / PCBWay / OSHPark</span></div>
+      </div>
+    </div>
+
+    <div class="proj-nav">
+      <a href="../index.html#projects">← Back to all projects</a>
+      <a href="usb-uart-converter.html">Next project: USB to UART Converter →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Tahir Ali. Built board-by-board.</span>
+    <span class="footer-social">
+      <a href="https://www.fiverr.com/sellers/tahircircuit" target="_blank" rel="noopener">Fiverr</a> ·
+      <a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a> ·
+      <a href="https://www.freelancer.com/u/ElectricTech1" target="_blank" rel="noopener">Freelancer</a> ·
+      <a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+    <span><a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="tel:03049037412">0304-9037412</a> · Pakistan · Available Worldwide</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

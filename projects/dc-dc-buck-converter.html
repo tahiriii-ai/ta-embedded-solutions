@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DC-DC Buck Converter PCB — Tahir Ali</title>
+<meta name="description" content="Manufacturing-ready DC-DC buck converter PCB with copper pour and 3D visualization — zero ERC/DRC errors. Designed in KiCad by Tahir Ali.">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand"><span class="chip">TA</span>Tahir Ali</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../Tahir_Ali_Resume.pdf" class="nav-cta" download>Download Résumé</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="proj-hero">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a> <span>/</span> <a href="../index.html#projects">Projects</a> <span>/</span> <span>U5</span>
+      </div>
+      <div class="proj-hero-top">
+        <div>
+          <span class="tag">U5 — Power Electronics Board</span>
+          <h1>DC-DC Buck Converter PCB</h1>
+          <p class="sub">KiCad · Power Electronics</p>
+        </div>
+      </div>
+      <div class="chips-row">
+        <span>KiCad</span><span>Power Electronics</span><span>Copper Pour</span><span>Zero DRC/ERC Errors</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <div class="gallery">
+      <figure>
+        <img src="../images/buck-3d-front.png" alt="DC-DC buck converter PCB, 3D render, angled front view">
+        <figcaption>3D View — Front</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/buck-3d-top.png" alt="DC-DC buck converter PCB, 3D render, top view">
+        <figcaption>3D View — Top</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/buck-routing.png" alt="DC-DC buck converter PCB copper routing and layout with board outline">
+        <figcaption>PCB Layout — Routing</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/buck-schematic.png" alt="DC-DC buck converter schematic diagram built around the LM2596 regulator">
+        <figcaption>Schematic Diagram</figcaption>
+      </figure>
+    </div>
+
+    <div class="proj-body-grid">
+      <div>
+        <h2>Overview</h2>
+        <p>
+          A manufacturing-ready buck converter board built around the LM2596T-5 step-down
+          regulator, taking a 12V DC input down to a regulated 5V DC output. The design was taken
+          the full distance: schematic capture, footprint placement, copper pour, and a 3D render
+          for final visual sign-off — closing out with a completely clean DRC and ERC pass, zero
+          errors and zero warnings.
+        </p>
+        <p>
+          A trimmer-adjustable feedback network (R1/R2/R3) allows the output to be tuned, with an
+          onboard status LED and flyback diode protecting the switching node. Power boards are
+          less forgiving than digital layouts — trace widths, thermal relief, and pour clearances
+          all have to be sized for the current they'll actually carry, and this build was routed
+          with that in mind from the first placement pass.
+        </p>
+        <h2 style="margin-top:32px;">Key Features</h2>
+        <ul class="feature-list">
+          <li>LM2596T-5 switching regulator, 12V DC in → 5V DC out</li>
+          <li>Trimmer-adjustable feedback network for output tuning</li>
+          <li>Flyback diode and output capacitor filtering on the switching node</li>
+          <li>Onboard power/status LED indicator</li>
+          <li>Copper pour sized and cleared for power delivery</li>
+          <li>3D visualization for design sign-off</li>
+          <li>Zero ERC and zero DRC errors or warnings</li>
+          <li>Manufacturing-ready Gerber and BOM output</li>
+        </ul>
+      </div>
+
+      <div class="spec-box">
+        <h3>Build Spec</h3>
+        <div class="spec-row"><span>Tool</span><span>KiCad</span></div>
+        <div class="spec-row"><span>Regulator</span><span>LM2596T-5</span></div>
+        <div class="spec-row"><span>Topology</span><span>Buck (step-down)</span></div>
+        <div class="spec-row"><span>Input</span><span>12V DC</span></div>
+        <div class="spec-row"><span>Output</span><span>5V DC (trimmer-adjustable)</span></div>
+        <div class="spec-row"><span>Copper</span><span>Poured, current-rated</span></div>
+        <div class="spec-row"><span>ERC</span><span>0 errors / 0 warnings</span></div>
+        <div class="spec-row"><span>DRC</span><span>0 errors / 0 warnings</span></div>
+        <div class="spec-row"><span>Fab Ready</span><span>JLCPCB / PCBWay / OSHPark</span></div>
+      </div>
+    </div>
+
+    <div class="proj-nav">
+      <a href="stm32-gps-tracker.html">← Previous: STM32 GPS Tracker</a>
+      <a href="water-level-indicator.html">Next project: Water Level Indicator →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Tahir Ali. Built board-by-board.</span>
+    <span class="footer-social">
+      <a href="https://www.fiverr.com/sellers/tahircircuit" target="_blank" rel="noopener">Fiverr</a> ·
+      <a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a> ·
+      <a href="https://www.freelancer.com/u/ElectricTech1" target="_blank" rel="noopener">Freelancer</a> ·
+      <a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+    <span><a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="tel:03049037412">0304-9037412</a> · Pakistan · Available Worldwide</span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
