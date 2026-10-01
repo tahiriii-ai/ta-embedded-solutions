@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom ESP32 Development Board | Tahir Ali, PCB Design Engineer</title><meta name="description" content="2-layer ESP32 development board designed in KiCad: USB-C input, ESD protection, onboard 3.3 V LDO, antenna keep-out and GPIO breakout.">
+<meta name="theme-color" content="#0a1230">
+<meta property="og:type" content="website"><meta property="og:title" content="Custom ESP32 Development Board | Tahir Ali, PCB Design Engineer"><meta property="og:description" content="2-layer ESP32 development board designed in KiCad: USB-C input, ESD protection, onboard 3.3 V LDO, antenna keep-out and GPIO breakout."><meta property="og:image" content="../images/esp32-front.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.className="js"</script>
+<link rel="preload" href="../fonts/display.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../fonts/body.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css"></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Main">
+<a href="../index.html" class="brand"><span class="chip" aria-hidden="true">TA</span>Tahir Ali</a>
+<button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html#home">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#work">Work</a></li><li><a href="../index.html#process">Process</a></li><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li>
+<li><a href="../Tahir_Ali_Resume.pdf" download>Resume</a></li>
+<li><a class="nav-cta" href="../index.html#contact">Start a Project</a></li>
+</ul></nav></header><main id="main"><div class="wrap">
+<div class="ph-hero"><p class="crumb"><a href="../index.html">Home</a> / <a href="../index.html#work">Work</a> / Custom ESP32 Dev Board</p>
+<h1>Custom ESP32 Development Board</h1><p class="meta">ESP32 Dev Board · 2-Layer · USB-C · KiCad · Portfolio project</p>
+<div class="big"><img src="../images/cut/esp32-front.png" alt="Custom ESP32 development board 3D render, front view showing the USB-C connector and antenna" width="567" height="483" fetchpriority="high"></div>
+<dl class="tb"><div><dt>Tool</dt><dd>KiCad</dd></div><div><dt>Layers</dt><dd>2</dd></div><div><dt>MCU</dt><dd>ESP32 module</dd></div><div><dt>Power in</dt><dd>USB Type-C</dd></div><div><dt>Regulator</dt><dd>AP2112K-1.2 (3.3 V LDO)</dd></div><div><dt>ESD protection</dt><dd>USBLC6-2SC6</dd></div><div><dt>Interfaces</dt><dd>UART / SPI / I2C</dd></div><div><dt>Verification</dt><dd>DRC + ERC</dd></div></dl></div>
+<section class="cs"><div class="cs-grid"><h2><b>01</b>The challenge</h2><div class="prose"><p>A self-contained ESP32 platform that other firmware projects can be built on: USB Type-C for power and data, on-board regulation to 3.3 V, and the module's core interfaces exposed on GPIO headers.</p></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>02</b>My role</h2><div class="prose"><ul class="list"><li>Schematic capture in KiCad</li><li>Footprint placement and routing</li><li>Ground plane and antenna keep-out</li><li>DRC/ERC verification and manufacturing output</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>03</b>Engineering approach</h2><div class="prose"><ul class="list"><li>Boot and reset push-buttons use RC filtering for debounce.</li><li>Ground plane poured solid under the RF section, with a dedicated keep-out zone around the module antenna.</li><li>ESD protection on the USB data lines (USBLC6-2SC6) and a 3.3 V AP2112K-1.2 LDO on board.</li><li>UART, SPI and I2C broken out across full GPIO headers.</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>04</b>PCB design</h2><div class="prose"><div class="stages"><span>Schematic</span><span>Layout</span><span>3D board</span></div><div class="shots"><figure class="shot"><img src="../images/esp32-schematic-b.png" alt="ESP32 board schematic sheet with input power and USB-C, 3.3 V LDO, ESP32, boot and reset, and pin header blocks" width="1400" height="796" loading="lazy" decoding="async"><figcaption>Schematic</figcaption></figure><figure class="shot"><img src="../images/esp32-schematic-a.png" alt="ESP32 board PCB layout with antenna keep-out zone at the top" width="520" height="639" class="tall" loading="lazy" decoding="async"><figcaption>PCB layout with antenna keep-out</figcaption></figure><figure class="shot"><img src="../images/cut/esp32-front.png" alt="ESP32 development board 3D render, front view" width="567" height="483" loading="lazy" decoding="async"><figcaption>3D view: front</figcaption></figure><figure class="shot"><img src="../images/cut/esp32-back.png" alt="ESP32 development board 3D render, back view" width="623" height="525" loading="lazy" decoding="async"><figcaption>3D view: back</figcaption></figure></div></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>05</b>Verification</h2><div class="prose"><p>DRC and ERC were run and reviewed before fabrication output.</p></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>06</b>Final output</h2><div class="prose"><ul class="list"><li>KiCad design files</li><li>Manufacturing output prepared for JLCPCB, PCBWay and OSHPark</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>07</b>Project result</h2><div class="prose"><p>A complete 2-layer development board taken from schematic capture through to verified manufacturing output.</p></div></div></section>
+<div class="end"><h2>Have a similar PCB project?</h2><a class="btn btn-primary" href="../index.html#contact">Let's discuss your requirements</a></div>
+<nav class="pn" aria-label="Project navigation"><a href="rejsacan-v3-redesign.html">← Previous: RejsaCAN v3.4</a><a href="stm32-gps-tracker.html">Next: STM32 GPS Tracker →</a></nav>
+</div></main><footer><div class="wrap"><div class="foot">
+<div><strong>Tahir Ali</strong><p>PCB Design Engineer</p><p>PCB Design • Hardware Design • PCB Layout</p><p class="fcontact"><a href="tel:+923049037412">+92 304 9037412</a> · <a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="mailto:tahiralielectrical@gmail.com">tahiralielectrical@gmail.com</a></p></div>
+<ul>
+<li><a href="../index.html#work">Projects</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#contact">Contact</a></li><li><a href="../Tahir_Ali_Resume.pdf" download>Resume</a></li>
+<li><a href="https://www.fiverr.com/tahircircuit?public_mode=true" target="_blank" rel="noopener">Fiverr</a></li><li><a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a></li><li><a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a></li>
+</ul></div><p class="copy">© 2026 Tahir Ali. Available for freelance PCB design worldwide.</p></div></footer>
+<script src="../script.js"></script></body></html>

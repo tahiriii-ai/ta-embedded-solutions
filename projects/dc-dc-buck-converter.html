@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC-DC Buck Converter PCB | Tahir Ali, PCB Design Engineer</title><meta name="description" content="DC-DC buck converter PCB designed in KiCad around the LM2596T-5: 12 V to 5 V, copper pour for power delivery, Gerber and BOM output.">
+<meta name="theme-color" content="#0a1230">
+<meta property="og:type" content="website"><meta property="og:title" content="DC-DC Buck Converter PCB | Tahir Ali, PCB Design Engineer"><meta property="og:description" content="DC-DC buck converter PCB designed in KiCad around the LM2596T-5: 12 V to 5 V, copper pour for power delivery, Gerber and BOM output."><meta property="og:image" content="../images/buck-3d-front.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.className="js"</script>
+<link rel="preload" href="../fonts/display.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../fonts/body.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css"></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Main">
+<a href="../index.html" class="brand"><span class="chip" aria-hidden="true">TA</span>Tahir Ali</a>
+<button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html#home">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#work">Work</a></li><li><a href="../index.html#process">Process</a></li><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li>
+<li><a href="../Tahir_Ali_Resume.pdf" download>Resume</a></li>
+<li><a class="nav-cta" href="../index.html#contact">Start a Project</a></li>
+</ul></nav></header><main id="main"><div class="wrap">
+<div class="ph-hero"><p class="crumb"><a href="../index.html">Home</a> / <a href="../index.html#work">Work</a> / DC-DC Buck Converter</p>
+<h1>DC-DC Buck Converter PCB</h1><p class="meta">Power Electronics · LM2596 · 12 V to 5 V · KiCad · Portfolio project</p>
+<div class="big"><img src="../images/cut/buck-3d-front.png" alt="DC-DC buck converter PCB 3D render, angled front view" width="678" height="401" fetchpriority="high"></div>
+<dl class="tb"><div><dt>Tool</dt><dd>KiCad</dd></div><div><dt>Regulator</dt><dd>LM2596T-5</dd></div><div><dt>Topology</dt><dd>Buck (step-down)</dd></div><div><dt>Input</dt><dd>12 V DC</dd></div><div><dt>Output</dt><dd>5 V DC, trimmer-adjustable</dd></div><div><dt>Copper</dt><dd>Poured for power delivery</dd></div><div><dt>Verification</dt><dd>DRC + ERC</dd></div></dl></div>
+<section class="cs"><div class="cs-grid"><h2><b>01</b>The challenge</h2><div class="prose"><p>Power boards are less forgiving than digital layouts. Trace widths, thermal relief and pour clearances all have to suit the current the board carries, so the layout was planned around that from the first placement pass.</p></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>02</b>My role</h2><div class="prose"><ul class="list"><li>Schematic capture and footprint placement</li><li>Copper pour and routing for the power path</li><li>3D render for design sign-off</li><li>DRC/ERC verification and Gerber/BOM output</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>03</b>Engineering approach</h2><div class="prose"><ul class="list"><li>LM2596T-5 switching regulator taking 12 V DC to 5 V DC.</li><li>Trimmer-adjustable feedback network (R1/R2/R3) for output tuning.</li><li>Flyback diode and output capacitor filtering on the switching node, plus a power status LED.</li><li>Copper pour sized and cleared for power delivery.</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>04</b>PCB design</h2><div class="prose"><div class="stages"><span>Schematic</span><span>Routing</span><span>3D board</span></div><div class="shots"><figure class="shot"><img src="../images/buck-schematic.png" alt="DC-DC buck converter schematic built around the LM2596 regulator" width="666" height="448" loading="lazy" decoding="async"><figcaption>Schematic</figcaption></figure><figure class="shot"><img src="../images/buck-routing.png" alt="DC-DC buck converter copper routing and layout with board outline" width="478" height="334" loading="lazy" decoding="async"><figcaption>PCB layout: routing</figcaption></figure><figure class="shot"><img src="../images/cut/buck-3d-front.png" alt="DC-DC buck converter 3D render, angled front view" width="678" height="401" loading="lazy" decoding="async"><figcaption>3D view: front</figcaption></figure><figure class="shot"><img src="../images/cut/buck-3d-top.png" alt="DC-DC buck converter 3D render, top view" width="538" height="298" loading="lazy" decoding="async"><figcaption>3D view: top</figcaption></figure></div></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>05</b>Verification</h2><div class="prose"><p>ERC and DRC were run and reviewed before Gerber and BOM export. The 3D render was used for a final visual check.</p></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>06</b>Final output</h2><div class="prose"><ul class="list"><li>Gerber files and BOM</li><li>Manufacturing output prepared for JLCPCB, PCBWay and OSHPark</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>07</b>Project result</h2><div class="prose"><p>A power board taken from schematic to manufacturing files, with a trimmable 5 V output from a 12 V input.</p></div></div></section>
+<div class="end"><h2>Have a similar PCB project?</h2><a class="btn btn-primary" href="../index.html#contact">Let's discuss your requirements</a></div>
+<nav class="pn" aria-label="Project navigation"><a href="usb-uart-converter.html">← Previous: USB to UART Converter</a><a href="water-level-indicator.html">Next: Water Level Indicator →</a></nav>
+</div></main><footer><div class="wrap"><div class="foot">
+<div><strong>Tahir Ali</strong><p>PCB Design Engineer</p><p>PCB Design • Hardware Design • PCB Layout</p><p class="fcontact"><a href="tel:+923049037412">+92 304 9037412</a> · <a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="mailto:tahiralielectrical@gmail.com">tahiralielectrical@gmail.com</a></p></div>
+<ul>
+<li><a href="../index.html#work">Projects</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#contact">Contact</a></li><li><a href="../Tahir_Ali_Resume.pdf" download>Resume</a></li>
+<li><a href="https://www.fiverr.com/tahircircuit?public_mode=true" target="_blank" rel="noopener">Fiverr</a></li><li><a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a></li><li><a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a></li>
+</ul></div><p class="copy">© 2026 Tahir Ali. Available for freelance PCB design worldwide.</p></div></footer>
+<script src="../script.js"></script></body></html>

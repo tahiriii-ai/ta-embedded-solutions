@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STM32 GPS Tracker Board | Tahir Ali, PCB Design Engineer</title><meta name="description" content="Multi-layer STM32 GPS tracker board designed in KiCad, with antenna keep-out, solid ground plane and microSD data logging.">
+<meta name="theme-color" content="#0a1230">
+<meta property="og:type" content="website"><meta property="og:title" content="STM32 GPS Tracker Board | Tahir Ali, PCB Design Engineer"><meta property="og:description" content="Multi-layer STM32 GPS tracker board designed in KiCad, with antenna keep-out, solid ground plane and microSD data logging."><meta property="og:image" content="../images/gps-front.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.className="js"</script>
+<link rel="preload" href="../fonts/display.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../fonts/body.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css"></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Main">
+<a href="../index.html" class="brand"><span class="chip" aria-hidden="true">TA</span>Tahir Ali</a>
+<button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html#home">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#work">Work</a></li><li><a href="../index.html#process">Process</a></li><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li>
+<li><a href="../Tahir_Ali_Resume.pdf" download>Resume</a></li>
+<li><a class="nav-cta" href="../index.html#contact">Start a Project</a></li>
+</ul></nav></header><main id="main"><div class="wrap">
+<div class="ph-hero"><p class="crumb"><a href="../index.html">Home</a> / <a href="../index.html#work">Work</a> / STM32 GPS Tracker</p>
+<h1>STM32 GPS Tracker Board</h1><p class="meta">STM32 · GPS · SD Card Logging · KiCad · Portfolio project</p>
+<div class="big"><img src="../images/cut/gps-front.png" alt="STM32 GPS tracker board 3D render, front view showing the STM32 MCU and buttons" width="463" height="478" fetchpriority="high"></div>
+<dl class="tb"><div><dt>Tool</dt><dd>KiCad</dd></div><div><dt>MCU</dt><dd>STM32</dd></div><div><dt>Positioning</dt><dd>GPS module</dd></div><div><dt>Storage</dt><dd>microSD slot</dd></div><div><dt>Comms</dt><dd>UART</dd></div><div><dt>Layers</dt><dd>Multi-layer + ground plane</dd></div><div><dt>Mechanical</dt><dd>Enclosure mounting holes</dd></div><div><dt>Verification</dt><dd>DRC + ERC</dd></div></dl></div>
+<section class="cs"><div class="cs-grid"><h2><b>01</b>The challenge</h2><div class="prose"><p>An STM32, a GPS module and an SD card share one board, and each needs clean signals: the MCU's digital lines, the GPS RF front end and the SD data bus.</p></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>02</b>My role</h2><div class="prose"><ul class="list"><li>Board design and layout in KiCad</li><li>Ground plane and power management circuitry</li><li>GPS antenna keep-out and mounting holes for an enclosure</li><li>DRC/ERC verification</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>03</b>Engineering approach</h2><div class="prose"><ul class="list"><li>Dedicated ground plane and power management to keep each section quiet.</li><li>GPS module placed inside its own keep-out zone, clear of copper pour and crossing traces so reception is not compromised.</li><li>Multi-layer routing with a solid ground plane.</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>04</b>PCB design</h2><div class="prose"><div class="stages"><span>3D board</span></div><div class="shots"><figure class="shot"><img src="../images/cut/gps-front.png" alt="STM32 GPS tracker 3D render, front view" width="463" height="478" loading="lazy" decoding="async"><figcaption>3D view: front</figcaption></figure><figure class="shot"><img src="../images/cut/gps-back.png" alt="STM32 GPS tracker 3D render, back view showing the GPS module and SD card slot" width="522" height="460" loading="lazy" decoding="async"><figcaption>3D view: back</figcaption></figure></div></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>05</b>Verification</h2><div class="prose"><p>DRC and ERC were run and reviewed before fabrication.</p></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>06</b>Final output</h2><div class="prose"><ul class="list"><li>KiCad design verified for fabrication</li></ul></div></div></section>
+<section class="cs"><div class="cs-grid"><h2><b>07</b>Project result</h2><div class="prose"><p>A compact tracker board combining MCU, GPS and SD logging, with the GPS section isolated by a dedicated keep-out.</p></div></div></section>
+<div class="end"><h2>Have a similar PCB project?</h2><a class="btn btn-primary" href="../index.html#contact">Let's discuss your requirements</a></div>
+<nav class="pn" aria-label="Project navigation"><a href="esp32-dev-board.html">← Previous: Custom ESP32 Dev Board</a><a href="usb-uart-converter.html">Next: USB to UART Converter →</a></nav>
+</div></main><footer><div class="wrap"><div class="foot">
+<div><strong>Tahir Ali</strong><p>PCB Design Engineer</p><p>PCB Design • Hardware Design • PCB Layout</p><p class="fcontact"><a href="tel:+923049037412">+92 304 9037412</a> · <a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="mailto:tahiralielectrical@gmail.com">tahiralielectrical@gmail.com</a></p></div>
+<ul>
+<li><a href="../index.html#work">Projects</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#contact">Contact</a></li><li><a href="../Tahir_Ali_Resume.pdf" download>Resume</a></li>
+<li><a href="https://www.fiverr.com/tahircircuit?public_mode=true" target="_blank" rel="noopener">Fiverr</a></li><li><a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a></li><li><a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a></li>
+</ul></div><p class="copy">© 2026 Tahir Ali. Available for freelance PCB design worldwide.</p></div></footer>
+<script src="../script.js"></script></body></html>
