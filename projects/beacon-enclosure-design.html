@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beacon Parcel Tracker — 3D-Printable Enclosure Design | Tahir Ali, PCB Design Engineer</title><meta name="description" content="Custom enclosure for an ESP32-C3 parcel-tracking beacon: five 3D-printable parts, diffuser lid for 4 RGB LEDs, replaceable parcel clip, pogo-pin dock contacts. Designed in Fusion 360 with STL, STEP, drawings and assembly animation.">
+<meta name="theme-color" content="#0a1230">
+<meta property="og:type" content="website"><meta property="og:title" content="Beacon Parcel Tracker — 3D-Printable Enclosure Design | Tahir Ali"><meta property="og:description" content="Five-part 3D-printable enclosure for an ESP32-C3 parcel-tracking beacon, designed in Fusion 360 with a full hand-off package."><meta property="og:image" content="../images/beacon/overview.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.className="js"</script>
+<link rel="preload" href="../fonts/display.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../fonts/body.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css"></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Main">
+<a href="../index.html" class="brand"><span class="chip" aria-hidden="true">TA</span>Tahir Ali</a>
+<button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+<ul class="nav-links" id="navLinks">
+<li><a href="../index.html#home">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#work">Projects</a></li><li><a href="../index.html#process">Process</a></li><li><a href="../index.html#about">About</a></li><li><a href="../index.html#contact">Contact</a></li>
+<li><a href="../Tahir_Ali_Resume.pdf" download>Resume</a></li>
+<li><a class="nav-cta" href="../index.html#contact">Start a Project</a></li>
+</ul></nav></header><main id="main"><div class="wrap">
+<div class="ph-hero"><p class="crumb"><a href="../index.html">Home</a> / <a href="../index.html#work">Projects</a> / <a href="parcel-tracking-system.html">Parcel-Tracking System</a> / Beacon Enclosure</p>
+<h1>Beacon Parcel Tracker — 3D-Printable Enclosure</h1><p class="meta">Enclosure Design · Fusion 360 · 5 printed parts · ESP32-C3 · Client project</p>
+<div class="big light"><img src="../images/beacon/overview.webp" alt="Assembled Beacon enclosure: black lower housing with a translucent diffuser lid and a USB-C opening on the end face" width="1600" height="1067" fetchpriority="high"></div>
+<dl class="tb"><div><dt>Size</dt><dd>53.8 × 38.8 mm</dd></div><div><dt>Height</dt><dd>23.35 mm</dd></div><div><dt>With clip</dt><dd>27.9 mm</dd></div><div><dt>Printed parts</dt><dd>5</dd></div><div><dt>Screws</dt><dd>4× M2 (one type)</dd></div><div><dt>Tool</dt><dd>Fusion 360</dd></div><div><dt>Scope</dt><dd>Enclosure + files</dd></div><div><dt>Type</dt><dd>Client project</dd></div></dl></div>
+
+<section class="cs"><div class="cs-grid"><h2><b>01</b>The brief</h2><div class="prose"><p>The client has a small ESP32-C3 beacon that clips onto a parcel and talks to a paired gateway over ESP-NOW. The PCB carries four RGB LEDs, a piezo buzzer, a replaceable Li-Po battery, a USB-C port and two pogo-pin charging pads for a dock.</p><p>It needed a 3D-printable housing that shows the LED status clearly, holds a parcel clip, and lets the battery be replaced without soldering. This enclosure is one part of a two-device system; the PCBs are covered in the <a class="link" href="parcel-tracking-system.html">full product case study</a>.</p></div></div></section>
+
+<section class="cs"><div class="cs-grid"><h2><b>02</b>My role</h2><div class="prose"><ul class="list"><li>Enclosure design around the supplied PCB and the chosen Li-Po 503035 battery, using their exact STEP models</li><li>Five-part print design: lower housing, diffuser lid, clip bracket, clip jaw, battery retainer</li><li>Interference and clearance checks between every part, the PCB, battery, contacts and clip</li><li>Print-ready STL and STEP for each part, one full print plate, editable Fusion 360 files</li><li>Dimensioned drawings, bill of materials, manufacturing notes and an assembly animation</li></ul></div></div></section>
+
+<section class="cs"><div class="cs-grid"><h2><b>03</b>Design decisions</h2><div class="prose">
+<ul class="list">
+<li><strong>Light through the lid.</strong> The lid is a translucent diffuser with a 1.2 mm top plate, so the four RGB LEDs glow across the whole top face. A smoked or mirror-film finish is also described for a dark look when the LEDs are off.</li>
+<li><strong>Dark lower shell.</strong> The black housing holds the PCB on its four existing M2 mounting holes, so the board needs no extra brackets.</li>
+<li><strong>One screw type.</strong> Four identical M2 × 20 screws go in from the back, through the housing and PCB, into the lid posts. The two at the connector end also hold the clip bracket.</li>
+<li><strong>Replaceable parcel clip.</strong> A separate bracket and hinged jaw with a pin and leaf spring, so the clip can be reprinted or swapped without touching the electronics.</li>
+<li><strong>Battery swap without soldering.</strong> Remove four screws, lift the lid and PCB, unplug the battery and slide the retainer out.</li>
+<li><strong>Antenna care.</strong> Metal screws sit at least 6.6 mm from the ESP32 antenna edge, and nylon screws are specified at the two nearest positions.</li>
+<li><strong>Charging contacts.</strong> Two gold-plated studs line up with the PCB pads and the dock pins on the underside.</li>
+</ul></div></div></section>
+
+<section class="cs"><div class="cs-grid"><h2><b>04</b>CAD views</h2><div class="prose"><div class="shots">
+<figure class="shot"><img src="../images/beacon/front.webp" alt="Beacon enclosure assembled, front three-quarter view showing the USB-C opening" width="1600" height="1040" loading="lazy" decoding="async"><figcaption>Assembled: USB-C end</figcaption></figure>
+<figure class="shot"><img src="../images/beacon/back.webp" alt="Beacon enclosure assembled, back view with side vent slots" width="1600" height="1040" loading="lazy" decoding="async"><figcaption>Assembled: side vent slots</figcaption></figure>
+<figure class="shot"><img src="../images/beacon/bottom.webp" alt="Underside of the Beacon enclosure showing the clip bracket, hinge, four screw recesses and two gold charging contacts" width="1600" height="1040" loading="lazy" decoding="async"><figcaption>Underside: clip, screws and dock contacts</figcaption></figure>
+<figure class="shot"><img src="../images/beacon/usb.webp" alt="End view of the Beacon enclosure showing the stadium-shaped USB-C opening" width="1600" height="1040" loading="lazy" decoding="async"><figcaption>USB-C opening, recessed 2.4 mm</figcaption></figure>
+<figure class="shot"><img src="../images/beacon/lid-off.webp" alt="Beacon enclosure with the lid lifted, showing the PCB seated in the housing" width="1600" height="1040" loading="lazy" decoding="async"><figcaption>Lid off: PCB seated on its posts</figcaption></figure>
+<figure class="shot"><img src="../images/beacon/internals.webp" alt="Beacon internals: PCB lifted above the Li-Po battery in the lower housing" width="1600" height="1040" loading="lazy" decoding="async"><figcaption>Internals: battery under the PCB</figcaption></figure>
+<figure class="shot"><img src="../images/beacon/exploded.webp" alt="Exploded view of the Beacon enclosure with lid, PCB, housing, clip and screws separated" width="1600" height="1040" loading="lazy" decoding="async"><figcaption>Exploded view</figcaption></figure>
+<figure class="shot"><img src="../images/beacon/parts.webp" alt="All Beacon enclosure parts laid out separately: housing, lid, PCB, battery, retainer, clip bracket, clip jaw and hardware" width="1600" height="1040" loading="lazy" decoding="async"><figcaption>Every part, laid out</figcaption></figure>
+</div></div></div></section>
+
+<section class="cs"><div class="cs-grid"><h2><b>05</b>Assembly</h2><div class="prose"><p>A 16-second animation shows the build order, so a person printing the parts can assemble them without a call.</p>
+<div class="vid"><video controls preload="none" playsinline poster="../images/beacon/video-poster.webp" width="1280" height="720"><source src="../videos/beacon-assembly.mp4" type="video/mp4">Your browser can't play this video.</video></div>
+<ol class="steps"><li>Slide the battery under the hood, wires toward the connector end, and fit the retainer.</li><li>Plug the battery into the PCB and seat the board on the four posts.</li><li>Place the translucent lid on the housing (tongue and groove).</li><li>Set the clip bracket under one end and insert the four screws from the back.</li><li>Fit the jaw with the hinge pin and leaf spring.</li></ol></div></div></section>
+
+<section class="cs"><div class="cs-grid"><h2><b>06</b>Verification</h2><div class="prose"><p>The full assembly was checked in Fusion 360 for interference. No clashes were found between the enclosure parts, PCB, battery, contacts and clip, apart from the intended screw-thread overlaps.</p>
+<dl class="kv"><div><dt>Lid to buzzer</dt><dd>0.40 mm</dd></div><div><dt>Lid to LEDs</dt><dd>1.27 mm</dd></div><div><dt>Housing to USB-C</dt><dd>0.84 mm</dd></div><div><dt>Clip jaw to bracket</dt><dd>0.15 mm</dd></div><div><dt>Screw to antenna</dt><dd>6.6 mm or more</dd></div></dl>
+<p>These are CAD clearances. The first physical print is what confirms fit, which is why the hand-off lists what to check.</p></div></div></section>
+
+<section class="cs"><div class="cs-grid"><h2><b>07</b>Hand-off package</h2><div class="prose"><ul class="files">
+<li>STL for each of 5 parts</li><li>STEP for each part</li><li>One print plate (all 5 parts)</li><li>Full assembly STEP</li><li>Editable Fusion 360 files</li><li>13 rendered views</li><li>Assembly animation (MP4)</li><li>Dimensioned drawings, 4 sheets</li><li>Bill of materials (CSV)</li><li>Manufacturing and print notes</li></ul>
+<p style="margin-top:18px">Parts are already oriented for printing. Suggested settings: 0.16 to 0.20 mm layers, three walls, 25 to 30% infill. Black PETG, ASA or PA12 for the housing, translucent PETG or frosted resin for the lid, and PA12 or tough resin for the clip jaw.</p></div></div></section>
+
+<section class="cs"><div class="cs-grid"><h2><b>08</b>Open points, stated up front</h2><div class="prose"><p>A good hand-off says what is not yet proven. These are listed in the package for the first prototype:</p>
+<ul class="list"><li>Height is 23.35 mm, set by the 8.5 mm buzzer and the battery under the PCB. A low-profile buzzer would save about 5 mm.</li><li>Real battery lead length and how it folds inside the housing.</li><li>USB-C plug seating in the 2.4 mm recess with the client's cable.</li><li>Dock pin length and a relief slot in the dock for the clip.</li><li>Clip spring force and wear, LED light spread through the lid and buzzer loudness.</li></ul></div></div></section>
+
+<section class="cs"><div class="cs-grid"><h2><b>09</b>Project result</h2><div class="prose"><p>A complete, print-ready enclosure for a parcel beacon, delivered as parts, drawings, a bill of materials and an assembly animation, with the unverified points named so the first prototype can close them.</p></div></div></section>
+
+<div class="end"><h2>Need a PCB and enclosure designed together?</h2><div class="endcta"><a class="btn btn-primary" href="../index.html#contact">Discuss your project</a><span>I usually reply within a day.</span><a class="link" href="../index.html#work">See all projects</a></div></div>
+<nav class="pn" aria-label="Project navigation"><a href="parcel-tracking-system.html">← The full product</a><a href="multi-radio-gateway-layout.html">Next: Multi-Radio Gateway →</a></nav>
+</div></main><footer><div class="wrap"><div class="foot">
+<div><strong>Tahir Ali</strong><p>PCB Design Engineer</p><p>PCB Design • Hardware Design • PCB Layout</p><p class="fcontact"><a href="tel:+923049037412">+92 304 9037412</a> · <a href="mailto:tahiraliaiml@gmail.com">tahiraliaiml@gmail.com</a> · <a href="mailto:tahiralielectrical@gmail.com">tahiralielectrical@gmail.com</a></p></div>
+<ul>
+<li><a href="../index.html#work">Projects</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#contact">Contact</a></li><li><a href="../Tahir_Ali_Resume.pdf" download>Resume</a></li>
+<li><a href="https://www.fiverr.com/tahircircuit?public_mode=true" target="_blank" rel="noopener">Fiverr</a></li><li><a href="https://www.upwork.com/freelancers/~01393ea75067305202?viewMode=1" target="_blank" rel="noopener">Upwork</a></li><li><a href="https://www.linkedin.com/in/tahir-ali-7430803a5/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/tahiriii-ai" target="_blank" rel="noopener">GitHub</a></li>
+</ul></div><p class="copy">© 2026 Tahir Ali. Available for freelance PCB design worldwide.</p></div></footer>
+<a class="fab" href="../index.html#contact">Start a Project</a>
+<script src="../script.js"></script></body></html>
